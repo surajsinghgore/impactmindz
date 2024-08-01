@@ -1,0 +1,23 @@
+.education-item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--color-gray);
+  padding: 20px 0;
+}
+
+.e-i-details h5 {
+  color: var(--color-dark);
+}
+
+.e-i-details li {
+  color: var(--color-gray-dark);
+}
+
+.e-i-details ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.e-i-image {
+  max-width: 80%;
+}

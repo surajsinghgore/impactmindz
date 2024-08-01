@@ -1,0 +1,54 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  color: var(--color-light);
+  font-size: 20px;
+}
+
+.icon-github {
+  background-color: #333;
+}
+
+.icon-linkedin {
+  background-color: #0e76a8;
+}
+
+.icon-gmail {
+  background-color: #ea4335;
+}
+
+.icon-gitlab {
+  background-color: #fca326;
+}
+
+.icon-facebook {
+  background-color: #3b5998;
+}
+
+.icon-medium {
+  background-color: #000;
+}
+
+.icon-stackoverflow {
+  background-color: #f48024;
+}
+
+.social-links a:hover {
+  background-color: var(--color-dark);
+}
+
+.mode-dark .icon-medium {
+  background-color: var(--color-dark);
+}

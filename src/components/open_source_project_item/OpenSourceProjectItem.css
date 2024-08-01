@@ -1,0 +1,68 @@
+.language span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+.open-source-project-item {
+  padding: 20px;
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mode-dark .open-source-project-item {
+  box-shadow: 0 0 17px rgba(255, 255, 255, 0.4);
+}
+
+.open-source-projects .row {
+  row-gap: var(--bs-gutter-x);
+}
+
+.open-source-project-item h3 {
+  font-size: 24px;
+  position: relative;
+  padding-left: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.open-source-project-item h3 svg {
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.open-source-project-item p {
+  color: var(--color-gray-dark);
+}
+
+.o-s-p-i-details {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--color-gray-dark);
+  font-size: 14px;
+  column-gap: 15px;
+  margin-top: auto;
+}
+
+.project-size {
+  margin-left: auto;
+}
+
+.language {
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.o-s-p-i-details svg {
+  margin-right: 5px;
+}

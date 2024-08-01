@@ -1,0 +1,24 @@
+.banner-left h1 {
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+
+.banner-left p {
+  font-size: 30px;
+  color: var(--color-gray-dark);
+}
+
+.banner-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  margin-top: 40px;
+}
+
+.banner-left h1 img {
+  margin-top: -15px;
+}
+
+.banner.sec-padding {
+  padding-top: 4vw;
+}

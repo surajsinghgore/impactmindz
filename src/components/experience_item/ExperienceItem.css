@@ -1,0 +1,54 @@
+.experience-banner img {
+  width: 30%;
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
+  position: absolute;
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.experience-banner {
+  position: relative;
+  min-height: 150px;
+  padding-top: 30px;
+}
+
+.experience-banner h4 {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.experience-item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--color-gray);
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.experience-details {
+  padding: 80px 20px 20px;
+  text-align: center;
+}
+
+.experience-details h5 {
+  color: var(--color-dark);
+}
+
+.experience-details p {
+  color: var(--color-gray-dark);
+}
+
+.experience-details ul {
+  color: var(--color-gray-dark);
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+.mode-dark .experience-item {
+  box-shadow: 0 0 17px rgba(255, 255, 255, 0.4);
+}

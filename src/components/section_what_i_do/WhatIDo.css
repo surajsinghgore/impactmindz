@@ -1,0 +1,14 @@
+ul.list-bolt svg {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: #f5b212;
+}
+
+ul.list-bolt li {
+  position: relative;
+  padding-left: 25px;
+  margin-top: 15px;
+  color: var(--color-gray-dark);
+  font-size: 18px;
+}
