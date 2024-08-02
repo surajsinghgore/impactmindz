@@ -165,7 +165,7 @@ header.hidden {
   }
 
   .toggle-switch input:checked~.ball {
-    transform: translateX(24px);
+    transform: translateX(25px);
   }
 
   .toggle-switch .ball {
