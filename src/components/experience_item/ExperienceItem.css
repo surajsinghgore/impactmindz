@@ -52,3 +52,47 @@
 .mode-dark .experience-item {
   box-shadow: 0 0 17px rgba(255, 255, 255, 0.4);
 }
+
+@media (max-width: 1199px) {
+  .experience-details {
+    padding: 60px 10px 10px;
+  }
+
+  .experience-banner {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .experience-banner {
+    min-height: 130px;
+  }
+
+  .experience-details {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .experience-banner {
+    min-height: 160px;
+  }
+
+  .experience-details {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .experience-banner img {
+    width: 100px;
+  }
+
+  .experience-banner {
+    min-height: 130px;
+  }
+
+  .experience-details {
+    padding-top: 70px;
+  }
+}

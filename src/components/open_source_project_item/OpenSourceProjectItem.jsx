@@ -6,7 +6,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const OpenSourceProjectItem = ({ project }) => {
   return (
-    <div className="open-source-project-item">
+    <a href={project.url} target="_blank" className="open-source-project-item">
       <h3>
         <FontAwesomeIcon icon={faBook} />
         {project.title}
@@ -27,7 +27,7 @@ const OpenSourceProjectItem = ({ project }) => {
         </div>
         <div className="project-size">{project.size}</div>
       </div>
-    </div>
+    </a>
   );
 };
 

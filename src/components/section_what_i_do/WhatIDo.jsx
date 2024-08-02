@@ -8,7 +8,7 @@ import { faBolt } from "@fortawesome/free-solid-svg-icons";
 
 const WhatIDo = () => {
   return (
-    <section className="what-i-do">
+    <section className="what-i-do sec-padding" id="skills">
       <Container>
         <Row>
           <Col md={5}>

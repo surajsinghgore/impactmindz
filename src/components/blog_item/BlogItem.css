@@ -1,0 +1,82 @@
+.blog {
+  position: relative;
+  padding: 30px 40px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.2);
+  display: block;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  height: 100%;
+}
+
+.mode-dark .blog {
+  box-shadow: 0 0 17px rgba(255, 255, 255, 0.4);
+}
+
+.blog svg {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  color: #ffffff;
+}
+
+.blog .circle {
+  background-color: var(--color-primary);
+  display: block;
+  width: 90px;
+  height: 80px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.blog:hover .circle {
+  width: 100vw;
+  height: 100vw;
+}
+
+.blog:hover {
+  color: var(--color-light);
+}
+
+.blog p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-gray-dark);
+}
+
+.blog h4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 991px) {
+  .blog:hover .circle {
+    width: 150vw;
+    height: 150vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog:hover .circle {
+    width: 200vw;
+    height: 200vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog:hover .circle {
+    width: 300vw;
+    height: 300vw;
+  }
+}

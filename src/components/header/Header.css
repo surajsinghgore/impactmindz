@@ -1,5 +1,12 @@
 header {
   padding: 15px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: var(--color-light);
+  z-index: 99;
+  transition: transform 0.2s ease-in;
 }
 
 .toggle-switch {
@@ -49,11 +56,11 @@ header {
 .navbar-collapse {
   flex-grow: initial;
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 header .nav-link {
-  padding: 15px 20px !important;
+  padding: 15px 10px !important;
   font-size: 18px;
   color: var(--color-dark);
   transition: none;
@@ -62,4 +69,126 @@ header .nav-link {
 
 header .nav-link:hover {
   background-color: var(--color-gray);
+}
+
+header.hidden {
+  transform: translateY(-105%);
+}
+
+.navbar {
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .toggle-switch {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    flex-direction: column;
+    order: 3;
+  }
+
+  .navbar-toggler span {
+    width: 25px;
+    height: 4px;
+    background-color: var(--color-dark);
+    display: block;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-light);
+    margin-right: 0;
+    transform: translateY(100%);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.1s ease;
+  }
+
+  .mode-dark .navbar-collapse {
+    box-shadow: 0 8px 8px rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar {
+    position: static;
+  }
+
+  header .nav-link {
+    color: var(--color-dark);
+    padding: 15px 20px !important;
+  }
+
+  .navbar-nav {
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler:focus-visible {
+    outline-color: var(--color-gray-dark);
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  header .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo span {
+    font-size: 22px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .toggle-switch {
+    min-height: 18px;
+    min-width: 44px;
+    margin-right: 15px;
+    padding: 3px;
+  }
+
+  .toggle-switch input:checked~.ball {
+    transform: translateX(24px);
+  }
+
+  .toggle-switch .ball {
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    left: 2px;
+  }
+
+  .toggle-switch img {
+    max-width: 10px;
+  }
+
+  .toggle-switch input+img {
+    max-width: 12px !important;
+  }
+
+  .navbar-toggler span {
+    width: 20px;
+    height: 2px;
+  }
+
+  header .nav-link {
+    padding: 15px !important;
+  }
 }

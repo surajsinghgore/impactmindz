@@ -1,4 +1,3 @@
-import "./BigProjects.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -17,7 +16,9 @@ const BigProjects = () => {
     <section className="big-projects sec-padding">
       <Container>
         <h2>Big Projects</h2>
-        <h4>Some startups and companies that i helped to create their tech</h4>
+        <h5 className="text-uppercase">
+          Some startups and companies that i helped to create their tech
+        </h5>
         <Row>{renderedBigProjects}</Row>
       </Container>
     </section>

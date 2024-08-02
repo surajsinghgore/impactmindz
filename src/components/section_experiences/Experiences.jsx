@@ -7,13 +7,13 @@ import ExperienceItem from "../experience_item/ExperienceItem";
 const Experiences = () => {
   const renderedExperienceItems = experienceData?.map((item, index) => {
     return (
-      <Col md={4} key={index}>
+      <Col lg={4} md={6} key={index}>
         <ExperienceItem item={item} />
       </Col>
     );
   });
   return (
-    <section className="experiences sec-padding">
+    <section className="experiences sec-padding" id="experiences">
       <Container>
         <h2>Experiences</h2>
         <Row>{renderedExperienceItems}</Row>

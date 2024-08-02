@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import iconSun from "../../assets/icons/sun-fill.svg";
 import iconMoon from "../../assets/icons/moon-fill.svg";
 import { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [mode, setMode] = useState(localStorage.getItem("mode") || "light");
@@ -23,6 +24,7 @@ const Header = () => {
     }
   };
   useEffect(() => {
+    // theme
     if (mode === "dark") {
       document.body.classList.add("mode-dark");
       document.querySelector(".toggle-switch").classList.add("on");
@@ -30,22 +32,55 @@ const Header = () => {
         .getElementById("checkbox-toggle-switch")
         .setAttribute("checked", "checked");
     }
+    // theme
+
+    // header show/hide on scroll
+    const header = document.querySelector("header");
+    let scrollValue = 0;
+    if (window.innerWidth > 1199) {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > scrollValue && window.scrollY > 200) {
+          header.classList.add("hidden");
+        } else {
+          header.classList.remove("hidden");
+        }
+        scrollValue = window.scrollY;
+      });
+    }
+    // header show/hide on scroll
   }, []);
   return (
     <header>
-      <Navbar expand="lg">
+      <Navbar expand="xl">
         <Logo />
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#">Skills</Nav.Link>
-            <Nav.Link href="#">Work Experiences</Nav.Link>
-            <Nav.Link href="#">Open Source</Nav.Link>
-            <Nav.Link href="#">Achievements</Nav.Link>
-            <Nav.Link href="#">Blogs</Nav.Link>
-            <Nav.Link href="#">Talks</Nav.Link>
-            <Nav.Link href="#">Resume</Nav.Link>
-            <Nav.Link href="#">Contact Me</Nav.Link>
+            <HashLink className="nav-link" to="/#skills">
+              Skills
+            </HashLink>
+            <HashLink className="nav-link" to="/#experiences">
+              Work Experiences
+            </HashLink>
+            <HashLink className="nav-link" to="/#open-source-projects">
+              Open Source
+            </HashLink>
+            <HashLink className="nav-link" to="/#certifications">
+              Certifications
+            </HashLink>
+            <HashLink className="nav-link" to="/#blogs">
+              Blogs
+            </HashLink>
+            <a className="nav-link" to="#">
+              Resume
+            </a>
+            <HashLink className="nav-link" to="/#contact">
+              Contact Me
+            </HashLink>
           </Nav>
         </Navbar.Collapse>
         <div className="toggle-switch">

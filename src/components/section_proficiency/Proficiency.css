@@ -1,0 +1,9 @@
+.proficiency h2 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .proficiency .row {
+    flex-direction: column-reverse;
+  }
+}

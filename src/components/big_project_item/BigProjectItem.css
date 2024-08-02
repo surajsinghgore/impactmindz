@@ -11,8 +11,13 @@
   align-items: center;
 }
 
+.mode-dark .big-project-item {
+  box-shadow: 0 0 17px rgba(255, 255, 255, 0.4);
+}
+
 .big-project-item img {
-  margin-bottom: auto;
+  max-height: 220px;
+  margin-bottom: 30px;
 }
 
 .big-project-item p {

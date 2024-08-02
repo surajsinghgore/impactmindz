@@ -30,6 +30,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .open-source-project-item h3 svg {
@@ -65,4 +66,24 @@
 
 .o-s-p-i-details svg {
   margin-right: 5px;
+}
+
+@media (max-width: 1199px) {
+  .open-source-project-item {
+    padding: 10px;
+  }
+
+  .o-s-p-i-details {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .open-source-project-item h3 {
+    font-size: 20px;
+  }
+
+  .open-source-project-item h3 svg {
+    font-size: 16px;
+  }
 }

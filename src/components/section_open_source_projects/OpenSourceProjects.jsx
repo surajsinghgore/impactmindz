@@ -9,14 +9,17 @@ const OpenSourceProjects = () => {
   const renderedOpenSourceProjects = openSourceProjectsData?.map(
     (project, index) => {
       return (
-        <Col md={4} key={index}>
+        <Col lg={4} md={6} key={index}>
           <OpenSourceProjectItem project={project} />
         </Col>
       );
     }
   );
   return (
-    <section className="open-source-projects">
+    <section
+      className="open-source-projects sec-padding"
+      id="open-source-projects"
+    >
       <Container>
         <h2>Open Source Projects</h2>
         <Row>{renderedOpenSourceProjects}</Row>

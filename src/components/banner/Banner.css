@@ -19,6 +19,60 @@
   margin-top: -15px;
 }
 
-.banner.sec-padding {
-  padding-top: 4vw;
+.banner {
+  padding-top: calc(4vw + 100px);
+}
+
+@media (max-width: 1199px) {
+  .banner-left h1 {
+    font-size: 60px;
+    margin-bottom: 35px;
+  }
+
+  .banner-left p {
+    font-size: 28px;
+  }
+
+  .banner-buttons {
+    column-gap: 30px;
+  }
+
+  .banner-left h1 img {
+    max-width: 62px;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-left h1 {
+    font-size: 46px;
+    margin-bottom: 30px;
+  }
+
+  .banner-left h1 img {
+    max-width: 48px;
+  }
+
+  .banner-left p {
+    font-size: 24px;
+  }
+
+  .banner-buttons {
+    column-gap: 10px;
+  }
+}
+
+@media(max-width: 767px) {
+  .banner .row>*:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner button.main-button {
+    width: 100%;
+  }
+
+  .banner-buttons {
+    gap: 10px;
+  }
 }

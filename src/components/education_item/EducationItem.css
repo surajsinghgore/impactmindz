@@ -21,3 +21,15 @@
 .e-i-image {
   max-width: 80%;
 }
+
+@media (max-width: 991px) {
+  .e-i-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .e-i-image {
+    max-width: 160px;
+  }
+}

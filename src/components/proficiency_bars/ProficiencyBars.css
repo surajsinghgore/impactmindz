@@ -13,3 +13,9 @@
 .p-bar {
   padding-top: 30px;
 }
+
+@media (max-width: 991px) {
+  .p-bar {
+    padding-top: 20px;
+  }
+}

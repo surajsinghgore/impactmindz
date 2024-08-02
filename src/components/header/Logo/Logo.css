@@ -6,3 +6,9 @@
 .logo .logo-name {
   color: var(--color-primary);
 }
+
+@media (max-width: 575px) {
+  .logo span {
+    font-size: 22px;
+  }
+}

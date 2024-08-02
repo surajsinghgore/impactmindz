@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  color: var(--color-light);
+  color: #ffffff;
   font-size: 20px;
 }
 
@@ -49,6 +49,19 @@
   background-color: var(--color-dark);
 }
 
+.mode-dark .social-links a:hover {
+  color: var(--color-light);
+}
+
 .mode-dark .icon-medium {
   background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+@media (max-width: 575px) {
+  .social-links a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
 }

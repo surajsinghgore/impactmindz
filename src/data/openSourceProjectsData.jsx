@@ -8,6 +8,7 @@ const openSourceProjectsData = [
     forks: 2698,
     stars: 5241,
     size: "26.2 MB",
+    url: "https://github.com/saadpasta/developerFolio",
   },
   {
     title: "react-blog-github",
@@ -17,6 +18,7 @@ const openSourceProjectsData = [
     forks: 133,
     stars: 786,
     size: "34.7 MB",
+    url: "https://github.com/saadpasta/react-blog-github",
   },
   {
     title: "awesome-web-components",
@@ -27,6 +29,7 @@ const openSourceProjectsData = [
     forks: 29,
     stars: 65,
     size: "2.1 MB",
+    url: "https://github.com/saadpasta/awesome-web-components",
   },
   {
     title: "Grocery-Items-Detection",
@@ -36,6 +39,7 @@ const openSourceProjectsData = [
     forks: 11,
     stars: 39,
     size: "27 MB",
+    url: "https://github.com/saadpasta/Grocery-Items-Detection",
   },
   {
     title: "PWA-Olx-Clone",
@@ -46,6 +50,7 @@ const openSourceProjectsData = [
     forks: 18,
     stars: 24,
     size: "3.3 MB",
+    url: "https://github.com/saadpasta/PWA-Olx-Clone",
   },
   {
     title: "Locate-Me",
@@ -56,6 +61,7 @@ const openSourceProjectsData = [
     forks: 6,
     stars: 9,
     size: "32.2 MB",
+    url: "https://github.com/saadpasta/Locate-Me",
   },
 ];
 

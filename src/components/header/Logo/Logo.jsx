@@ -1,12 +1,13 @@
 import "./Logo.css";
+import { HashLink } from "react-router-hash-link";
 
 const Logo = () => {
   return (
-    <a href="#" className="logo">
+    <HashLink to="#" className="logo">
       <span>&lt; </span>
       <span className="logo-name">Impactmindz</span>
       <span> /&gt;</span>
-    </a>
+    </HashLink>
   );
 };
 

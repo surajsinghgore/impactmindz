@@ -158,7 +158,7 @@ img {
 }
 
 .sec-padding {
-  padding: 8vw 0;
+  padding: 4vw 0;
 }
 
 h1,
@@ -236,10 +236,14 @@ h6 {
 
 a.link-button {
   background-color: var(--color-primary);
-  color: var(--color-light);
-  padding: 6px 15px;
+  color: #ffffff;
+  padding: 6px 10px 7px;
   border-radius: 4px;
   font-size: 12px;
+}
+
+.row {
+  row-gap: var(--bs-gutter-x);
 }
 
 @keyframes wave {
@@ -269,6 +273,51 @@ a.link-button {
 
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 46px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
+
+  button.main-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-padding {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  h2 {
+    font-size: 36px;
   }
 }
 

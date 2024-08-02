@@ -7,7 +7,7 @@ const Education = () => {
     return <EducationItem key={index} item={item} />;
   });
   return (
-    <section className="education">
+    <section className="education sec-padding">
       <Container>
         <h2>Education</h2>
         {renderedEducationItems}
